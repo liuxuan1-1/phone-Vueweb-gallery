@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+}
+.gallery {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gallery .item {
+  flex: 1;
+}
+.gallery .item img {
+  width: 33vw;
+  height: 33vh;
+}
+
+.gallery.preview .item {
+  display: flex;
+  margin: auto;
+}
+.gallery.preview .item img {
+  width: 100vw;
+  height: 100vh;
+}
+.gallery.preview {
+  touch-action: none;
+}
+.animation {
+  -webkit-transition: all .3s linear ;
+  -moz-transition: all .3s linear ;
+  transition: all .3s linear ;
+}
